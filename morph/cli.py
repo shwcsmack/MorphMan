@@ -64,7 +64,7 @@ def profile_path():
             die('No such folder at Anki profile path (from --profile): ' + path)
         dbs_path = os.path.join(path, 'dbs')
         if not os.path.isdir(dbs_path):
-            die('No MorphMan dbs folder in Anki profile (from --profile): ' + dbs_path)
+            die('No MorphmanKRPort dbs folder in Anki profile (from --profile): ' + dbs_path)
         return path
 
     base = profile_base_path()
@@ -72,9 +72,9 @@ def profile_path():
     pattern = os.path.join(base, '*', 'dbs', '')
     db_paths = glob.glob(pattern)
     if not db_paths:
-        die('No candidate MorphMan db paths in Anki folder: %s' % (pattern,))
+        die('No candidate MorphmanKRPort db paths in Anki folder: %s' % (pattern,))
     if len(db_paths) > 1:
-        die('Multiple possible MorphMan db paths: %s' % (' '.join(db_paths),))
+        die('Multiple possible MorphmanKRPort db paths: %s' % (' '.join(db_paths),))
 
     return os.path.dirname(os.path.dirname(db_paths[0]))
 
@@ -139,11 +139,11 @@ def main():
     parser.add_argument('--profile', metavar='DIR', help='path to Anki profile (if absent, we try some guesses)')
     subparsers = parser.add_subparsers(title='subcommands')
 
-    p_dump = subparsers.add_parser('dump', help='dump a MorphMan db in text form',
-                                   description='Dump a MorphMan database to stdout in a plain-text format.')
+    p_dump = subparsers.add_parser('dump', help='dump a MorphmanKRPort db in text form',
+                                   description='Dump a MorphmanKRPort database to stdout in a plain-text format.')
     p_dump.set_defaults(action=cmd_dump)
     p_dump.add_argument('name', metavar='NAME', help='database to dump (all, known, ...)')
-    p_dump.add_argument('--freq', action='store_true', help='include frequency as known to MorphMan')
+    p_dump.add_argument('--freq', action='store_true', help='include frequency as known to MorphmanKRPort')
 
     p_count = subparsers.add_parser('count', help='count morphemes in a corpus',
                                     description='Count all morphemes in the given files and emit a frequency table.')

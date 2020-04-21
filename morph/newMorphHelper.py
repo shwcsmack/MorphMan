@@ -112,7 +112,7 @@ def my_getNewCard(self, _old):
         from .util import getFilter
         note_filter = getFilter(note)
 
-        # this note is not configured in any filter -> proceed like normal without MorphMan-plugin
+        # this note is not configured in any filter -> proceed like normal without MorphmanKRPort-plugin
         # the deck should not be modified -> the user probably doesn't want the 'skip mature' feature
         if note_filter is None or not note_filter['Modify']:
             return card
@@ -122,7 +122,7 @@ def my_getNewCard(self, _old):
             focus_morph = focus(note)  # field contains either the focusMorph or is empty
         except KeyError:
             tooltip(_('Encountered card without the \'focus morph\' field configured in the preferences. Please check '
-                      'your MorphMan settings and note models.'))
+                      'your MorphmanKRPort settings and note models.'))
             return card  # card has no focusMorph field -> undefined behavior -> just proceed like normal
 
         # evaluate all conditions, on which this card might be skipped/buried

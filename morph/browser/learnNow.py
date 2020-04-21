@@ -25,7 +25,7 @@ def post(st):
 
 
 def runLearnNow():
-    label = 'MorphMan: Learn Now'
+    label = 'MorphmanKRPort: Learn Now'
     tooltip_msg = 'Immediately review the selected new cards'
     shortcut = cfg('set learn now key')
     addBrowserCardSelectionCmd(label, pre, per, post, tooltip=tooltip_msg, shortcut=(shortcut,))

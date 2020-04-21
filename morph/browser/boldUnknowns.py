@@ -46,7 +46,7 @@ def post(st):
     pass
 
 def runBoldUnknowns():
-    label = 'MorphMan: Bold Unnown Morphemes'
+    label = 'MorphmanKRPort: Bold Unnown Morphemes'
     tooltipMsg = 'Bold Unnown Morpheme on selected note'
     addBrowserNoteSelectionCmd(label, pre, per, post, tooltip=tooltipMsg)
 

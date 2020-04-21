@@ -31,7 +31,7 @@ def post(st):
 
 
 def runBatchPlay():
-    label = 'MorphMan: Batch Play'
+    label = 'MorphmanKRPort: Batch Play'
     tooltipMsg = 'Play all the videos for the selected cards'
     shortcut = cfg('set batch play key')
     addBrowserNoteSelectionCmd(label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,))

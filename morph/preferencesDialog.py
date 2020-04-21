@@ -22,7 +22,7 @@ class PreferencesDialog(QDialog):
         self.rowGui = []
         self.resize(950, 600)
 
-        self.setWindowTitle('MorphMan Preferences')
+        self.setWindowTitle('MorphmanKRPort Preferences')
         self.vbox = QVBoxLayout(self)
         self.tabWidget = QTabWidget()
         self.vbox.addWidget(self.tabWidget)
@@ -87,7 +87,7 @@ class PreferencesDialog(QDialog):
 
         label = QLabel(
             "This addon will attempt to change the data in the following fields. " +
-            "Every field that has a (*) is REQUIRED IN EVERY NOTE for MorphMan to work correctly. " +
+            "Every field that has a (*) is REQUIRED IN EVERY NOTE for MorphmanKRPort to work correctly. " +
             "The other fields are optional. Hover your mouse over text entries to see tooltip info.")
         label.setWordWrap(True)
         vbox.addWidget(label)
@@ -99,7 +99,7 @@ class PreferencesDialog(QDialog):
         fieldsList = [
             ("Focus morph (*):", "Field_FocusMorph",
              "Stores the unknown morpheme for sentences with one unmature word.\nGets cleared as soon as all works are mature."),
-            ("MorphMan Index:", "Field_MorphManIndex",
+            ("MorphmanKRPort Index:", "Field_MorphManIndex",
              "Difficulty of card. This will be set to `due` time of card."),
             ("Unmatures", "Field_Unmatures",
              "Comma-separated list of unmature words."),
@@ -187,8 +187,8 @@ class PreferencesDialog(QDialog):
         self.frame4.setLayout(vbox)
         vbox.setContentsMargins(0, 20, 0, 0)
 
-        label = QLabel("MorphMan will reorder the cards so that the easiest cards are at the front. To avoid getting "
-                       "new cards that are too easy, MorphMan will skip certain new cards. You can customize the skip "
+        label = QLabel("MorphmanKRPort will reorder the cards so that the easiest cards are at the front. To avoid getting "
+                       "new cards that are too easy, MorphmanKRPort will skip certain new cards. You can customize the skip "
                        "behavior here:")
         label.setWordWrap(True)
         vbox.addWidget(label)

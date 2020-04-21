@@ -36,8 +36,8 @@ def post(st):
 
 
 def runExtractMorphemes():
-    label = 'MorphMan: Extract Morphemes'
-    tooltip_msg = 'Extract morphemes in selected notes to a MorphMan db'
+    label = 'MorphmanKRPort: Extract Morphemes'
+    tooltip_msg = 'Extract morphemes in selected notes to a MorphmanKRPort db'
     shortcut = cfg('set extract morphemes key')
     addBrowserNoteSelectionCmd(label, pre, per, post, tooltip=tooltip_msg, shortcut=(shortcut,))
 

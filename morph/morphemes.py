@@ -116,7 +116,7 @@ class MorphDBUnpickler(pickle.Unpickler):
 
     def find_class(self, cmodule, cname):
         # Override default class lookup for this module to allow loading databases generated with older
-        # versions of the MorphMan add-on.
+        # versions of the MorphmanKRPort add-on.
         if cmodule.endswith('.morph.morphemes'):
             return globals()[cname]
         return pickle.Unpickler.find_class(self, cmodule, cname)
@@ -305,7 +305,7 @@ class MorphDb:
         except ModuleNotFoundError as e:
             aqt.utils.showInfo(
                 "ModuleNotFoundError was thrown. That probably means that you're using database files generated in "
-                "the older versions of MorphMan. To fix this issue, please refer to the written guide on database "
+                "the older versions of MorphmanKRPort. To fix this issue, please refer to the written guide on database "
                 "migration (copy-pasteable link will appear in the next window): "
                 "https://gist.github.com/InfiniteRain/1d7ca9ad307c4203397a635b514f00c2")
             raise e

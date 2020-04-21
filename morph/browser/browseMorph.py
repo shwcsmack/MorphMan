@@ -39,7 +39,7 @@ def post(st):
 
 
 def runBrowseMorph():
-    label = 'MorphMan: Browse Morphs'
+    label = 'MorphmanKRPort: Browse Morphs'
     tooltipMsg = 'Browse all notes containing the morphs from selected notes'
     shortcut = cfg('browse same focus key')
     addBrowserNoteSelectionCmd(label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,))

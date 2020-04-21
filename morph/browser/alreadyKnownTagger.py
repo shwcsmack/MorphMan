@@ -26,7 +26,7 @@ def post(st):  # :: State -> State
 
 
 def runAlreadyKnownTagger():
-    label = 'MorphMan: Already Known Tagger'
+    label = 'MorphmanKRPort: Already Known Tagger'
     tooltipMsg = 'Tag all selected cards as already known'
     shortcut = get_preference('set known and skip key')  # type: str
     addBrowserNoteSelectionCmd(label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,))

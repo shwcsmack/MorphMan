@@ -47,7 +47,7 @@ def post(st):  # :: State -> State
 
 
 def runBatchPlay():
-    label = 'MorphMan: Mass Tagger'
+    label = 'MorphmanKRPort: Mass Tagger'
     tooltip_msg = 'Tag all cards that contain morphemes from db'
     shortcut = cfg('set mass tagger key')
     addBrowserNoteSelectionCmd(label, pre, per, post, tooltip=tooltip_msg, shortcut=(shortcut,))

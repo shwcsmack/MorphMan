@@ -31,7 +31,7 @@ def post(st):
 
 
 def runViewMorphemes():
-    label = 'MorphMan: View Morphemes'
+    label = 'MorphmanKRPort: View Morphemes'
     tooltipMsg = 'View Morphemes for selected note'
     shortcut = cfg('set view morphemes key')
     addBrowserNoteSelectionCmd(label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,))

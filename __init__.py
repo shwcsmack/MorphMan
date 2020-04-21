@@ -35,8 +35,8 @@ def onMorphManPreferences():
 
 
 def main():
-    # Add MorphMan submenu
-    morphmanSubMenu = QMenu("MorphMan", mw)
+    # Add MorphmanKRPort submenu
+    morphmanSubMenu = QMenu("MorphmanKRPort", mw)
     mw.form.menuTools.addMenu(morphmanSubMenu)
 
     # Add recalculate menu button
@@ -56,7 +56,7 @@ def main():
     # Add gui manager menu button
     a = QAction('&Database Manager', mw)
     a.setStatusTip(
-        _("Open gui manager to inspect, compare, and analyze MorphMan DBs"))
+        _("Open gui manager to inspect, compare, and analyze MorphmanKRPort DBs"))
     a.setShortcut(_("Ctrl+D"))
     a.triggered.connect(onMorphManManager)
     morphmanSubMenu.addAction(a)

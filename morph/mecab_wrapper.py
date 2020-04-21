@@ -190,7 +190,7 @@ def mecab():  # IO MecabProc
     if (not reading) and importlib.util.find_spec('morph') and importlib.util.find_spec('morph.deps.mecab.reading'):
         try:
             reading = importlib.import_module('morph.deps.mecab.reading')
-            mecab_source = 'MorphMan'
+            mecab_source = 'MorphmanKRPort'
         except ModuleNotFoundError:
             pass
 

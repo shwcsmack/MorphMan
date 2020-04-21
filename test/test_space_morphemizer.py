@@ -11,7 +11,7 @@ class TestSpaceMorphemizer(unittest.TestCase):
         case_1 = "tu es quelqu'un de bien"
         sentence_2 = "El griego antiguo es el lenguaje de las obras de Homero, incluyendo la Ilíada y la Odisea."
         case_2 = "el griego antiguo es el lenguaje de las obras de homero incluyendo la ilíada y la odisea"
-        sentence_3 = "MorphMan is an Anki addon that tracks what words you know, and utilizes that information to optimally reorder language cards."
+        sentence_3 = "MorphmanKRPort is an Anki addon that tracks what words you know, and utilizes that information to optimally reorder language cards."
         case_3 = "morphman is an anki addon that tracks what words you know and utilizes that information to optimally reorder language cards"
         sentence_4 = "The Mass Immersion Approach is a comprehensive approach to acquiring foreign languages."
         case_4 = "the mass immersion approach is a comprehensive approach to acquiring foreign languages"

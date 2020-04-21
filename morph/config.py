@@ -75,7 +75,7 @@ default = {
 
     # NOTICE: this code has changed. Now the mm index is already factored by 10000 / frequency length
     # If you came here to update this value to match your length of frequency.txt, then there is
-    # nothing to do, the MorphMan code does it automatically for you.
+    # nothing to do, the MorphmanKRPort code does it automatically for you.
     #'frequency.txt weight scale': 10,
 
     # Maximum bonus a card can get by its position in frequency.txt.
